@@ -1,5 +1,7 @@
 .wrapper {
     text-align: center;
+    position:absolute;
+    height: 75px;
 }
 
 .button {
@@ -8,4 +10,16 @@
     width: 200px;
     height: 100px;
     display: inline-block;
+    color:black;
+    background-color:chartreuse
+    
+}
+
+body {
+
+    padding: 30px;
+    margin: 30px;
+    background-image: url("../images/Einstein.jpg");
+
+    
 }

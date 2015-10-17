@@ -3,6 +3,8 @@
   <head>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script>
+        
+    var userName = prompt("Please eneter your name!")
 
     var userChoice = prompt("Do you choose rock, paper or scissors?");
 
@@ -22,32 +24,39 @@
           } else if(userChoice ==="rock") {
             if (computerChoice==="scissors") {
 
-                window.alert("Rock wins!");
+                window.alert(userName + ", Rock wins!");
           } else {
-                window.alert("Paper wins");
+                window.alert(userName + ", Paper wins");
               }
           }
           else if(userChoice==="paper") {
              if(computerChoice ==="rock") {
-                 window.alert("paper wins!");
+                 window.alert(userName + ", paper wins!");
              } else {
-                 window.alert("scissors wins!");
+                 window.alert(userName + ", scissors wins!");
              }
           }
 
           else if(userChoice==="scissors") {
               if (computerChoice==="rock") {
-                  window.alert("scissors wins!");
+                  window.alert(userName + ", scissors wins!");
               } else {
-                  window.alert("scissors wins");
+                  window.alert(userName + ", scissors wins");
               }
           }
+        
+        
       };
+        
+        var reload = function() {
+            window.location.reload();
+        }
     </script>
   </head>
   <body>
     <div class="wrapper">
-      <button class="button" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button>
+      <button class="button" onclick="compare(userChoice, computerChoice);">LETS PLAY Rock, Paper, Scissors!</button>
+        <button class="button" onclick="reload();">Reload Game</button>
     </div>
   </body>
 
